@@ -1,5 +1,5 @@
 FROM ubuntu 
 
 RUN apt-get update 
-RUN apt-get install –y nginx 
-CMD [“echo”,”Image created”] 
+RUN ubuntu/apache2
+COPY . /var/www/html/
