@@ -1,5 +1,3 @@
-FROM ubuntu 
-
+FROM ubuntu/apache2
 RUN apt-get update 
-RUN ubuntu/apache2
 COPY . /var/www/html/
